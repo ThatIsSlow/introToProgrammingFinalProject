@@ -39,8 +39,8 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-ex. Chris Cozort  
-ex. ccozort@bcp.org
+Jonas Thieme - j.thieme23@bcp.org
+
 
 ## Version History
 
@@ -59,4 +59,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Inspiration, code snippets, etc.
 * [w3Schools](https://www.w3schools.com/python/default.asp)
 * [PyGame](https://www.pygame.org/docs/)
-* [Automate The Boring Stuff](https://automatetheboringstuff.com/)
+
