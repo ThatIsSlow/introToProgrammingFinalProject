@@ -2,18 +2,20 @@
 
 # Placeholder name
 
-Simple overview of use/purpose.
+This programm will scrape the website HereNow, to pull rowing regatta results out and place them elsewhere. 
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Ideally this programm will be able to exist outside of VScode, either on a website using Flask, or as an application that exists as an individual file. Most likely a website if I can make it work. This will enable the input of a race, or a team, and the programm will pull from HereNow either the race, the team, all the results of the team. 
 
 ## Getting Started
+
+
 
 ### Dependencies
 
 * Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Python 3.x, Pygame, etc.
+* Ideally there will be no dependencies that the user needs to be able to use it. 
 
 ### Installing
 
@@ -44,9 +46,6 @@ Jonas Thieme - j.thieme23@bcp.org
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
