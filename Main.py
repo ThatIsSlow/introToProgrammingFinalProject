@@ -1,4 +1,4 @@
-############################################################################################################################################################
+#################################################################################################################################################################
 """
 PROJECT OUTLINE:
     - Two possible ideas
@@ -14,8 +14,12 @@ PROJECT OUTLINE:
             - will enable the user to input a team name or a rower name or a boat class
                 - will then scan HereNow, looking through certain races, or a lot of races, to assemble all of the results of the
                     desired search, and then place it into a new window/file
+            RESOURCES: 
+                https://www.edureka.co/blog/web-scraping-with-python/
+
+
 """
-###############################################################################################################################################################
+#################################################################################################################################################################
 
 """
 Sources: 
@@ -37,7 +41,7 @@ pg.display.set_caption(" ")
 clock = pg.time.Clock()
 
 # Function to get things on screen
-mob1 = Mob(WHITE)
+mob1 = Mob(WHITE, 10)
 
 mobs = pg.sprite.Group()
 

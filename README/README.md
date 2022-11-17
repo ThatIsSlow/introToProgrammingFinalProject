@@ -1,6 +1,6 @@
 # introToProgrammingFinalProject
 
-# Project Title
+# Placeholder name
 
 Simple overview of use/purpose.
 
