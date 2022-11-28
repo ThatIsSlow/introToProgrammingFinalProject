@@ -58,4 +58,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Inspiration, code snippets, etc.
 * [w3Schools](https://www.w3schools.com/python/default.asp)
 * [PyGame](https://www.pygame.org/docs/)
+* [AutomateTheBoringStuff](https://automatetheboringstuff.com/2e/chapter12/)
 
