@@ -8,25 +8,26 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 
 
-
-driver = webdriver.Chrome('C:\GitHub\IntroToProgramming2022\intoToProgrammingFinalProject\chromedriver_win32.zip\chromedriver')  # Optional argument, if not specified will search path.
-driver.get('https://herenow.com/results/#/races/20899/results')
-time.sleep(5) # Let the user actually see something!
-search_box = driver.find_elements(By.ID, '""')
-
-print(search_box)
-
-time.sleep(2) # Let the user actually see something!
-driver.quit()
+# driver = webdriver.Chrome('C:\GitHub\IntroToProgramming2022\intoToProgrammingFinalProject\chromedriver_win32.zip\chromedriver')  # Optional argument, if not specified will search path.
+# driver.get('https://herenow.com/results/#/races/20899/results')
+# time.sleep(7) # Let the user actually see something!
+# search_box = driver.find_elements(By.ID, 'applicationHost')
+# print(search_box)
+# driver.quit()
 
 
 '''
-res = requests.get('https://herenow.com/results/#/races/21065/results')
+res = requests.get('https://herenow.com/results/#/races/20899/results')
 res.raise_for_status()
+time.sleep(10)
+# print(res.content)
 HereNowResult = bs4.BeautifulSoup(res.text, 'html.parser')
-print(type(HereNowResult))
-Redwood = HereNowResult.select('span .ng-binding')
+# print(type(HereNowResult))
+print("   ")
+print("   ")
+Redwood = HereNowResult.select("div", { "class" : "ng-scope" }, 10)
 print(Redwood)
+print("  ")
 '''
 
 '''
