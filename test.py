@@ -25,7 +25,7 @@ XPATH_IsiahHarrisonSEMI = '//*[@id="displayResultsView"]/section/ul/li[2]/div/di
 XPATH_IsiahHarrisonSEMI = '/html/body/div[2]/ng-view/div/section/ul/li[2]/div/div/table/tbody/tr[3]/td[3]/span[1]'
 XPATH_IsiahHarrisonTT = '/html/body/div[2]/ng-view/div/section/ul/li[1]/div/div/table/tbody/tr[3]/td[3]/span[1]'
 
-time.sleep(30)
+time.sleep(60)
 #this is css selector for mathew willer, and the XPATH
 ##########element = driver.find_element(By.CSS_SELECTOR, '#displayResultsView > section > ul > li:nth-child(1) > div > div > table > tbody > tr:nth-child(1) > td.nameData > span.ng-binding')
 #this is css selector,and the xpath for Isiah harrison
@@ -49,12 +49,17 @@ Desired_Name =  """Joel Bustamante
 while Running:
     while True:
         Finish_Position = str(Finish_Position)
-        try:
-            element = driver.find_element(By.CSS_SELECTOR, '#displayResultsView > section > ul > li:nth-child(1) > div > div > table > tbody > tr:nth-child('+ Finish_Position +') > td.nameData > span.ng-binding')
-        except NoSuchElementException:
-            print('error')
+        Race_Number = str(Race_Number)
+        if Race_Number > 6:
             driver.quit
-            exit()
+        try:
+            element = driver.find_element(By.CSS_SELECTOR, '#displayResultsView > section > ul > li:nth-child('+Race_Number+') > div > div > table > tbody > tr:nth-child('+ Finish_Position +') > td.nameData > span.ng-binding')
+            Final_time = driver.find_element(By.CSS_SELECTOR, '#displayResultsView > section > ul > li:nth-child(1) > div > div > table > tbody > tr:nth-child(1) > td:nth-child(13) > span')
+        except NoSuchElementException:
+            print('END OF RACE. NEXT RACE')
+            Race_Number = int(Race_Number) + 1
+            Finish_Position = (int(Finish_Position)*0) + 1
+            
         
         print(element.text)
         Finish_Position = int(Finish_Position) + 1
