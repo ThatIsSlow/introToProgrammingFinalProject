@@ -38,10 +38,14 @@ from selenium import webdriver
 from requests_html import HTMLSession
 from selenium.common.exceptions import NoSuchElementException
 
-driver = webdriver.Chrome('C:\GitHub\IntroToProgramming2022\intoToProgrammingFinalProject\chromedriver_win32.zip\chromedriver')  
-driver.get('https://herenow.com/results/#/races/20899/results')
-time.sleep(60)
-element1 = driver.find_element(By.XPATH, '//*[@id="displayResultsView"]/section/ul/li[1]/div/div/table/tbody/tr[1]')
+URL = 'https://herenow.com/results/#/races/20899/results'
 
-print(element1.text)
+chrome_driver = "Code\Projects\chromedriver.exe"
+driver = webdriver.Chrome(chrome_driver)
+driver.get(URL)
+time.sleep(50)
+# spans = driver.find_element(By.TAG_NAME, "span")
+# print(type(spans))
+searchresults = driver.find_elements(By.XPATH,"//span[contains(@class,'ng-binding')]")
+print(len(searchresults))
 driver.quit
