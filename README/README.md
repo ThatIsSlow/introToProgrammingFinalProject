@@ -1,31 +1,31 @@
 # introToProgrammingFinalProject
 
-# Placeholder name
+# HereNowResults assimilator
 
-This programm will scrape the website HereNow, to pull rowing regatta results out and place them elsewhere. 
+This programm will scrape the website HereNow, to pull rowing regatta results out and collect them all in one spot. 
 
 ## Description
 
-Ideally this programm will be able to exist outside of VScode, either on a website using Flask, or as an application that exists as an individual file. Most likely a website if I can make it work. This will enable the input of a race, or a team, and the programm will pull from HereNow either the race, the team, all the results of the team. 
+This programm enables the user too select a team name, and the program will search the given race for all occurences of that team, and pull them out into a seperate location. 
 
 ## Getting Started
-
+You need to ensure that you have all of the libraries installed, as this code currently only exists within VScode.
 
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* Ideally there will be no dependencies that the user needs to be able to use it. 
+* You must have version 108 of Chrome in order for the webdriver to function properly
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Download from my github, currently is self contained
+
 
 ### Executing program
 
 * How to run the program
-* Step-by-step bullets
+* 1. Run the programm
+* 2. Profit 
 ```
 code blocks for commands
 ```
@@ -59,4 +59,5 @@ Inspiration, code snippets, etc.
 * [w3Schools](https://www.w3schools.com/python/default.asp)
 * [PyGame](https://www.pygame.org/docs/)
 * [AutomateTheBoringStuff](https://automatetheboringstuff.com/2e/chapter12/)
+* Mr. Cozort
 
