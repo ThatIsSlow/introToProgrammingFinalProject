@@ -59,5 +59,5 @@ Inspiration, code snippets, etc.
 * [w3Schools](https://www.w3schools.com/python/default.asp)
 * [PyGame](https://www.pygame.org/docs/)
 * [AutomateTheBoringStuff](https://automatetheboringstuff.com/2e/chapter12/)
-* Mr. Cozort
+* [Mr. Cozort](https://www.bcp.org/who-we-are/people/chris-cozort)
 
