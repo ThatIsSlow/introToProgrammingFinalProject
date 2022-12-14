@@ -16,15 +16,56 @@ PROJECT OUTLINE:
 
 """
 Sources: 
+https://medium.com/geekculture/how-to-import-another-file-in-python-4f833ea462b1
+https://realpython.com/python-gui-tkinter/
 
 """
-import requests, bs4, time, requests_html
-from selenium import webdriver
-import pandas as pd
-import bs4
-from selenium.webdriver import Chrome
-from selenium.webdriver.common.by import By
-from selenium import webdriver
-from requests_html import HTMLSession
-from selenium.common.exceptions import NoSuchElementException
+# Import Libraries
+from Util.Classes import WebdriverToExcel
+import tkinter as tk
+from tkinter import *
+from tkinter import ttk
+
+
+
+def RunWebd(URL, Desired_Team):
+    # Instantiates our self created imported class, and calls it
+    Webdriver = WebdriverToExcel("'" + URL + "'", "'" + Desired_Team + "'")
+    Webdriver.webdriver()
+    
+
+
+# Create the main window
+window = tk.Tk()
+window.title("HereNowResults assimilator")
+# window.geometry("750x350")
+
+mainframe = ttk.Frame(window, padding="3 4 12 12")
+mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+window.columnconfigure(0, weight=1)
+window.rowconfigure(0, weight=1)
+
+URLtoSearch = StringVar()
+url_entry = ttk.Entry(mainframe, width=50, textvariable=URLtoSearch)
+url_entry.grid(column=2, row=1, sticky=(W,E))
+
+TeamtoSearch = StringVar()
+team_entry = ttk.Entry(mainframe, width=50, textvariable=TeamtoSearch)
+team_entry.grid(column=2, row=2, sticky=(W,E))
+
+ttk.Button(mainframe, text="Find My Team!", command=RunWebd).grid(column=2, row=3, sticky=(E))
+ttk.Label(mainframe, text="What Race would you like to search? (URL)").grid(column=3, row=1, sticky=W)
+ttk.Label(mainframe, text="What Team would you like to search for? (Check your spelling!)").grid(column=3, row=2, sticky=W)
+
+
+for child in mainframe.winfo_children(): 
+    child.grid_configure(padx=5, pady=5)
+
+url_entry.focus()
+window.bind("<Return>", RunWebd)
+
+
+# Start the main event loop
+window.mainloop()
+
 
