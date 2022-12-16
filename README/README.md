@@ -27,9 +27,7 @@ The libraries include Selenium, Tkinter, and XLWT
 * 1. Run the programm
 * 2. Your computer Needs to remain open while the code runs
 * 3. Profit 
-```
-code blocks for commands
-```
+
 
 ## Help
 
@@ -37,9 +35,7 @@ If Chromedriver fails top load the window, there is a high chance the URL you en
 and double check your spelling.
 
 Another common error that occurs, is that the website doesn't render. This means your connection is poor, and you need to probably move or check your wifi. 
-```
-command to run if program contains helper info
-```
+
 
 ## Authors
 
@@ -64,4 +60,5 @@ Inspiration, code snippets, etc.
 * [PyGame](https://www.pygame.org/docs/)
 * [AutomateTheBoringStuff](https://automatetheboringstuff.com/2e/chapter12/)
 * [Mr. Cozort](https://www.bcp.org/who-we-are/people/chris-cozort)
+
 
