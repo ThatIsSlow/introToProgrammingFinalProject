@@ -7,6 +7,7 @@ This programm will scrape the website HereNow, to pull rowing regatta results ou
 ## Description
 
 This programm enables the user too select a team name, and the program will search the given race for all occurences of that team, and pull them out into a seperate location. 
+The Run Time is very long, don't worry if it takes forever to work, it is most likley functioning as created
 
 ## Getting Started
 You need to ensure that you have all of the libraries installed, as this code currently only exists within VScode.
