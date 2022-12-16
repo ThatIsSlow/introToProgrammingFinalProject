@@ -1,8 +1,8 @@
 # introToProgrammingFinalProject
 
-# HereNowResults assimilator
+# HereNowResults Embezzeler 
 
-This programm will scrape the website HereNow, to pull rowing regatta results out and collect them all in one spot. 
+This programm will scrape the website HereNow, to pull rowing regatta results out and collect them all in one spot. I am basically stealing HereNow's data. Muahahahah. 
 
 ## Description
 
@@ -10,7 +10,7 @@ This programm enables the user too select a team name, and the program will sear
 
 ## Getting Started
 You need to ensure that you have all of the libraries installed, as this code currently only exists within VScode.
-
+The libraries include Selenium, Tkinter, and XLWT
 
 ### Dependencies
 
@@ -25,14 +25,18 @@ You need to ensure that you have all of the libraries installed, as this code cu
 
 * How to run the program
 * 1. Run the programm
-* 2. Profit 
+* 2. Your computer Needs to remain open while the code runs
+* 3. Profit 
 ```
 code blocks for commands
 ```
 
 ## Help
 
-Any advise for common problems or issues.
+If Chromedriver fails top load the window, there is a high chance the URL you entered was wrong in some way. Run the program again
+and double check your spelling.
+
+Another common error that occurs, is that the website doesn't render. This means your connection is poor, and you need to probably move or check your wifi. 
 ```
 command to run if program contains helper info
 ```
