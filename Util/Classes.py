@@ -77,7 +77,7 @@ class WebdriverToExcel:
         
     # write to excel
     # creates instance of an imported class allowing maniuplation of excel
-    def toexcel(self, Team_Name):  
+    def to_excel(self, Team_Name):  
         wb = Workbook()
         #Creates the sheet as well as writes headers
         sheet1 = wb.add_sheet("Sheet 1")
