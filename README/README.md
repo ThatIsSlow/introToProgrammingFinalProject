@@ -42,7 +42,7 @@ Another common error that occurs, is that the website doesn't render. This means
 
 Contributors names and contact info
 
-Jonas Thieme - j.thieme23@bcp.org
+Jonas Thieme - jojothieme@gmail.com
 
 
 ## Version History
